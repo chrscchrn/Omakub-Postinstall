@@ -3,7 +3,7 @@
 ## Personal Post-install for omakub.org
 
 ### Usage
-`eval "$(wget -qO- https://raw.githubusercontent.com/chrscchrn/Omakub-Postinall/main/postinall.sh)"`
+`eval "$(wget -qO- https://raw.githubusercontent.com/chrscchrn/Omakub-Postinstall/main/postinstall.sh)"`
 
 ### Sets up...
 - Monogame/.NET
