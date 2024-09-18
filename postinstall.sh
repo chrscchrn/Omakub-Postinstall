@@ -1,6 +1,15 @@
 set -e
 
-echo ". . . My Omakub Post-Install . . ."
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+gsettings set org.gnome.desktop.session idle-delay 0
+
+for installer in ~/.local/share/omakub-postinstall/install/terminal/*.sh; do source $installer; done
+for installer in ~/.local/share/omakub-postinstall/install/desktop/*.sh; do source $installer; done
+
+gsettings set org.gnome.desktop.screensaver lock-enabled true
+gsettings set org.gnome.desktop.session idle-delay 300
+
+# forget ab it
 
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
